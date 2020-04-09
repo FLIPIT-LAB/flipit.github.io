@@ -313,7 +313,7 @@ input{
 /**** HEADER STARTS****/
 
  header {
-    min-height: 100%;
+    min-height: 500px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
