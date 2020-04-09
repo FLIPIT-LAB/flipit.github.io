@@ -45,15 +45,14 @@
             </ul>
           </div>
           <div style="display:flex; justify-content: center; align-items: center;">
-            <a class="signIn">Sign in or</a>
+            <a data-toggle="modal" data-target="#exampleModalCenter" class="signIn">Sign in or</a>
             <button class="nav_btn" data-toggle="modal" data-target="#exampleModal"> <i class="fas fa-plus-square" style="padding: 6px;"></i> create Account </button>
           </div>
         </div>
       </nav><br><br>
-      <!-- ********** NAV BAR  END********** -->
-
-    <!-- ########### MODAL BOX START ********-->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    
+      <!-- ########### SIGNUP MODAL BOX START ********-->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -68,13 +67,13 @@
                 <label>Username *</label>
                 <input type="text" placeholder="Your desired username">
                 </div>
-
+    
                 <div class="formgroup-child">
                     <label>Email *</label>
                     <input type="email" placeholder="it will be verified">
                     </div>
                 </div><br><br>
-
+    
                 <div class="formgroup-password">
                     <div style="flex-direction: column; flex-grow: 1;">
                         <label>Password *</label>
@@ -83,7 +82,7 @@
                             <i toggle="#password-field" class="fa fa-fw fa-eye icon toggle-password toggler"></i>
                           </div>
                     </div>
-
+    
                     <div style="flex-direction: column; flex-grow: 1;">
                         <label>Repeat Password *</label>
                         <div class="password-div">
@@ -97,18 +96,18 @@
                         <input type="checkbox">
                         <span style="font-size: 13px;"> I agree to terms and conditions</span>
                     </div><br>
-
+    
                     <button  type="submit" class="register_btn">Register</button>
-
+    
                     <div class="or-div">
                         <div class="line"></div>
                         <span style="font-size:14px">OR</span>
                         <div class="line"></div>
                     </div>
-
+    
                     <div class="sign-in">
                     <p class="signin-p">Sign in with</p>
-
+    
                     <div style="display: flex;" >
                         <div class="social_div">
                         <button id="social_btn" class="register_btn social_media"><span class="fab fa-facebook"></span> Facebook</button>
@@ -120,14 +119,71 @@
                             <button id="social_btn" style=" background-color:royalblue" class="register_btn"><span class="fab fa-google"></span> Google</button>
                          </div>
                     </div><br>
-
+    
                     <p class="signin-p"><a href="http://www.google.com" style="color: black;">Already have account? Login here</a></p>
                     </div>
             </form>
           </div>
         </div>
       </div> 
-  <!-- ########### MODAL BOX END ********-->
+      <!-- *********SIGNUP MODAL BOX END -->
+    
+      <!-- ******SIGNIN MODAL BOX -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header" style="display: flex;">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Sign In</h5>
+            <div style="margin-left: auto;">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+          </div>
+            <form class="modal-body" style="display: flex; justify-content: center; flex-direction: column;">
+              <div style="display: flex; flex-grow: 1;margin-right: 16px; margin-bottom: 30px; flex-direction: column;">
+              <label style="font-size: 12px;">Username *</label><br>
+              <input type="text" placeholder="Please enter your username">
+              </div>
+    
+                  <div style="flex-direction: column; flex-grow: 1; margin-bottom: 30px;">
+                      <label style="font-size: 12px;">Password *</label><br>
+                      <div style="display: flex; flex-grow: 1;  background-color: white; border-bottom: 1px solid #E5E7E9; margin-right: 16px;">
+                          <input id="password-field3" type="password" name="password" class="search_input" placeholder="Please enter your password" style="padding: 0px; margin: 0px;">
+                          <i toggle="#password-field3" class="fa fa-fw fa-eye icon toggle-password3" style=" color: rgba(0, 0, 0,0.5); padding: 0px; margin: 0px; font-size: 12px;"></i>
+                        </div>
+                  </div>
+    
+                  <button  type="submit" class="register_btn">Register</button><br>
+    
+                  <div style="display: flex; align-items: center; justify-content: center;">
+                      <div style="background-color: #E5E7E9; height: 1px; flex-grow: 1; margin-right: 8px;"></div>
+                      <span style="font-size:14px">OR</span>
+                      <div style="background-color: #E5E7E9; height: 1px; flex-grow: 1; margin-left: 8px;"></div>
+                  </div><br><br>
+    
+                  <div style="display: flex; justify-content: center; flex-direction: column;">
+                  <p style="font-size:14px; text-align:center">Sign in with</p>
+    
+                  <div style="display: flex;" >
+                      <div style="margin: 8px; flex-grow: 1;">
+                      <button style="padding: 8px 80px 8px 8px; " class="register_btn"><span class="fab fa-facebook"></span> Facebook</button>
+                      </div>
+                      <div style="margin: 8px; flex-grow: 1;">
+                          <button style="padding: 8px 80px 8px 8px; background-color: #38A1F3; " class="register_btn"><span class="fab fa-twitter"></span> Twitter</button>
+                       </div>
+                       <div style="margin: 8px; flex-grow: 1;">
+                          <button style="padding: 8px 80px 8px 8px; background-color:royalblue" class="register_btn"><span class="fab fa-google"></span> Google</button>
+                       </div>
+                  </div><br>
+    
+                  <p style="font-size:14px; text-align:center"><a href="#" style="color: black;">Don't have account? register here</a></p>
+                  </div>
+          </form>
+        </div>
+      </div>
+    </div>
+     <!-- ******SIGNIN MODAL BOX -->
     
   <!-- *********** HEADER START ********** -->
     <header
