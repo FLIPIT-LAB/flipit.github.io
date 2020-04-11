@@ -1,0 +1,1148 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Flip It | Landing Page</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/Main.css">
+  <link rel="stylesheet" href="CSS/all.css">
+  <link rel="stylesheet" href="CSS/market.css">
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy">
+  <span id="button"></span>
+
+  <!-- ********** NAV BAR  START********** -->
+  <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="205"
+    style="background-color: white;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="#" style="color: black; font-size: 16px; font-weight: bolder;">FLIPiT</a> </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="how_it_works.html">How It Works</a></li>
+          <li>
+            <a href="sell.html" style="cursor: pointer;">Sell</a>
+            <!-- <ul class="nav-dropdown">
+              <li>
+                <a href="#">Sample Ads</a>
+              </li>
+              <li>
+                <a href="#">Sample Ads</a>
+              </li>
+              <li>
+                <a href="#">Sample Ads</a>
+              </li>
+            </ul> -->
+          </li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div style="display:flex; justify-content: center; align-items: center;">
+        <a data-toggle="modal" data-target="#exampleModalCenter" class="signIn">Sign in or</a>
+        <button class="nav_btn" data-toggle="modal" data-target="#exampleModal"> <i class="fas fa-plus-square"
+            style="padding: 6px;"></i> create Account </button>
+      </div>
+    </div>
+  </nav><br><br>
+
+  <!-- ########### SIGNUP MODAL BOX START ********-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">Register</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-left: auto;">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div><br>
+        <form class="modal-body">
+          <div class="formgroup-parent">
+            <div class="formgroup-child">
+              <label>Username *</label>
+              <input type="text" placeholder="Your desired username">
+            </div>
+
+            <div class="formgroup-child">
+              <label>Email *</label>
+              <input type="email" placeholder="it will be verified">
+            </div>
+          </div><br><br>
+
+          <div class="formgroup-password">
+            <div style="flex-direction: column; flex-grow: 1;">
+              <label>Password *</label>
+              <div class="password-div">
+                <input id="password-field" type="password" name="password" class="search_input"
+                  placeholder="use a strong password" style="padding: 0px; margin: 0px;">
+                <i toggle="#password-field" class="fa fa-fw fa-eye icon toggle-password toggler"></i>
+              </div>
+            </div>
+
+            <div style="flex-direction: column; flex-grow: 1;">
+              <label>Repeat Password *</label>
+              <div class="password-div">
+                <input id="password-field2" type="password" name="password" class="search_input"
+                  placeholder="to make sure it is correct" style="padding: 0px; margin: 0px;">
+                <i toggle="#password-field2" class="fa fa-fw fa-eye icon toggle-password toggler"></i>
+              </div>
+            </div>
+          </div><br>
+
+          <div style="display: flex; margin-bottom: 30px;">
+            <input type="checkbox">
+            <span style="font-size: 13px;"> I agree to terms and conditions</span>
+          </div><br>
+
+          <button type="submit" class="register_btn">Register</button>
+
+          <div class="or-div">
+            <div class="line"></div>
+            <span style="font-size:14px">OR</span>
+            <div class="line"></div>
+          </div>
+
+          <div class="sign-in">
+            <p class="signin-p">Sign in with</p>
+
+            <div style="display: flex;">
+              <div class="social_div">
+                <button id="social_btn" class="register_btn social_media"><span class="fab fa-facebook"></span>
+                  Facebook</button>
+              </div>
+              <div class="social_div">
+                <button id="social_btn" style=" background-color: #38A1F3; " class="register_btn"><span
+                    class="fab fa-twitter"></span> Twitter</button>
+              </div>
+              <div class="social_div">
+                <button id="social_btn" style=" background-color:royalblue" class="register_btn"><span
+                    class="fab fa-google"></span> Google</button>
+              </div>
+            </div><br>
+
+            <p class="signin-p"><a href="http://www.google.com" style="color: black;">Already have account? Login
+                here</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- *********SIGNUP MODAL BOX END -->
+
+  <!-- ******SIGNIN MODAL BOX -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header" style="display: flex;">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Sign In</h5>
+          <div style="margin-left: auto;">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
+        <form class="modal-body" style="display: flex; justify-content: center; flex-direction: column;">
+          <div style="display: flex; flex-grow: 1;margin-right: 16px; margin-bottom: 30px; flex-direction: column;">
+            <label style="font-size: 12px;">Username *</label>
+            <input type="text" placeholder="Please enter your username">
+          </div>
+
+          <div style="flex-direction: column; flex-grow: 1; margin-bottom: 30px;">
+            <label style="font-size: 12px;">Password *</label>
+            <div
+              style="display: flex; flex-grow: 1;  background-color: white; border-bottom: 1px solid #E5E7E9; margin-right: 16px;">
+              <input id="password-field3" type="password" name="password" class="search_input"
+                placeholder="Please enter your password" style="padding: 0px; margin: 0px;">
+              <i toggle="#password-field3" class="fa fa-fw fa-eye icon toggle-password3"
+                style=" color: rgba(0, 0, 0,0.5); padding: 0px; margin: 0px; font-size: 12px;"></i>
+            </div>
+          </div>
+
+          <button type="submit" class="register_btn">Register</button><br>
+
+          <div style="display: flex; align-items: center; justify-content: center;">
+            <div style="background-color: #E5E7E9; height: 1px; flex-grow: 1; margin-right: 8px;"></div>
+            <span style="font-size:14px">OR</span>
+            <div style="background-color: #E5E7E9; height: 1px; flex-grow: 1; margin-left: 8px;"></div>
+          </div><br><br>
+
+          <div style="display: flex; justify-content: center; flex-direction: column;">
+            <p style="font-size:14px; text-align:center">Sign in with</p>
+
+            <div style="display: flex;">
+              <div style="margin: 8px; flex-grow: 1;">
+                <button style="padding: 8px 80px 8px 8px; " class="register_btn"><span class="fab fa-facebook"></span>
+                  Facebook</button>
+              </div>
+              <div style="margin: 8px; flex-grow: 1;">
+                <button style="padding: 8px 80px 8px 8px; background-color: #38A1F3; " class="register_btn"><span
+                    class="fab fa-twitter"></span> Twitter</button>
+              </div>
+              <div style="margin: 8px; flex-grow: 1;">
+                <button style="padding: 8px 80px 8px 8px; background-color:royalblue" class="register_btn"><span
+                    class="fab fa-google"></span> Google</button>
+              </div>
+            </div><br>
+
+            <p style="font-size:14px; text-align:center"><a href="#" style="color: black;">Don't have account? register
+                here</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- ******SIGNIN MODAL BOX -->
+
+  <!-- *********** HEADER START ********** -->
+  <header style="background-image:url('IMAGES/bg.jpeg'); min-height: 500px; ">
+    <div id="header_overlay">
+      <div class="header-content">
+        <div class="header-content-inner">
+          <h1>All you need to sell with flip it</h1>
+          <p style="font-size: 16px;">Browse from more than 15,000,000 adverts while new ones come on daily basis</p>
+          <div style="display: flex;">
+            <div class="search-div">
+              <input type="text" class="search_input" placeholder="Search for...">
+              <i class="fas fa-bullhorn" id="inline-icon"></i>
+            </div>
+            <div class="search-div">
+              <input type="text" class="search_input" placeholder="Located in...">
+              <i class="fas fa-compass" id="inline-icon"></i>
+            </div>
+            <div class="search-div">
+              <input type="text" class="search_input" placeholder="In Category">
+              <i class="fas fa-dot-circle" id="inline-icon"></i>
+            </div>
+            <div id="search-div">
+              <button class="search">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header><br><br>
+  <!-- *********** HEADER END ********** -->
+
+
+<!--*********** SLIDESHOW *************************** -->
+  <h2 style="text-align: center;">Trending</h2>
+  <div style="display:flex;">
+  <div id="slideshow">
+    <div>
+      <img src="IMAGES/feature-img/feature-1.jpg" style="width: 100%;height: 70%;"><br><br>
+      <button class="nav_btn view" >View Details </button>
+    </div>
+    <div>
+      <img src="IMAGES/feature-img/feature-2.jpg" style="width: 100%;height: 70%;"><br><br>
+      <button class="nav_btn" >Add To Cart  </button>
+    </div>
+ </div>
+ <div id="slideshow" class="slideshow">
+  <div>
+    <img src="IMAGES/blog-img/blog-Image-1.png" style="width: 100%;height: 70%;"><br><br>
+    <button class="nav_btn" >Add to Cart </button>
+  </div>
+  <div>
+    <img src="IMAGES/blog-img/blog-Image-2.png" style="width: 100%;height: 70%;"><br><br>
+    <button class="nav_btn view" >View Details </button>
+  </div>
+</div>
+<div id="slideshow" class="slideshow2">
+  <div>
+    <img src="IMAGES/blog-img/blog-Image-3.png" style="width: 100%;height: 70%;"><br><br>
+    <button class="nav_btn view" >View Details </button>
+  </div>
+  <div>
+    <img src="IMAGES/blog-img/blog-Image-4.png" style="width: 100%;height: 70%;"><br><br>
+    <button class="nav_btn" >Add To Cart </button>
+  </div>
+</div>
+<div id="slideshow" class="slideshow3">
+  <div>
+    <img src="IMAGES/blog-img/blog-Image-5.png" style="width: 100%;height: 70%;"><br><br>
+    <button class="nav_btn" >Add To Cart </button>
+  </div>
+  <div>
+    <img src="IMAGES/blog-img/blog-Image-1.png" style="width: 100%;height: 70%;"><br><br>
+    <button class="nav_btn view" >View Details </button>
+  </div>
+</div>
+<div id="slideshow" class="slideshow4">
+  <div>
+    <img src="IMAGES/feature-img/feature-3.jpeg" style="width: 100%;height: 70%;"><br><br>
+    <button class="nav_btn view" >View Details </button>
+  </div>
+  <div>
+    <img src="IMAGES/feature-img/feature-4.jpg" style="width: 100%;height: 70%;"><br><br>
+    <button class="nav_btn" >Add To Cart </button>
+  </div>
+</div>
+</div>
+<!--*********** SLIDE SHOW END************* -->
+  
+<!-- *********** MARKET ************* -->
+  <section class="market-container">
+    <div
+      style="border-right: 1px solid rgba(0, 0, 0,0.3); width:20%; margin-right: auto;height: auto; padding: 20px;display: flex; flex-direction: column;">
+      <h5 style="letter-spacing: 2px; font-weight: 600;">CATEGORIES</h5><br>
+      <div style="display: flex; margin-bottom: 12px; padding-bottom: 12px;">
+        <input style="margin-right: 6px;" type="checkbox">
+        <a href="#EndingSoon" class="nav-link" data-toggle="tab"><span
+            style="font-size: 14px; color: rgba(0, 0, 0,0.6); font-weight: 600;">New Arrivals (2,4740) </span></a>
+      </div>
+      <div style="display: flex; margin-bottom: 12px;  padding-bottom: 12px;">
+        <input style="margin-right: 6px;" type="checkbox">
+        <a style="width: 100%;display: flex;" href="#EndingSoon" class="nav-link" data-toggle="tab"><span
+            style="font-size: 14px; color: rgba(0, 0, 0,0.6); font-weight: 600;">Trending (34,832) </span></a>
+      </div>
+      <div style="display: flex; margin-bottom: 12px; padding-bottom: 12px;">
+        <input style="margin-right: 6px;" type="checkbox">
+        <a style="width: 100%;display: flex;" href="#EndingSoon" class="nav-link" data-toggle="tab"><span
+            style="font-size: 14px; color: rgba(0, 0, 0,0.6); font-weight: 600;">Fashion (23,5644) </span></a>
+      </div>
+      <div style="display: flex; margin-bottom: 12px; padding-bottom: 12px;">
+        <input style="margin-right: 6px;" type="checkbox">
+        <a style="width: 100%;display: flex;" href="#EndingSoon" class="nav-link" data-toggle="tab"><span
+            style="font-size: 14px; color: rgba(0, 0, 0,0.6); font-weight: 600;">Vehicles (23,3644) </span></a>
+      </div>
+      <div style="display: flex; margin-bottom: 12px;padding-bottom: 12px;">
+        <input style="margin-right: 6px;" type="checkbox">
+        <a style="width: 100%;display: flex;" href="#EndingSoon" class="nav-link" data-toggle="tab"><span
+            style="font-size: 14px; color: rgba(0, 0, 0,0.6); font-weight: 600;">Electronics (33,5930) </span></a>
+      </div>
+      <div style="display: flex; margin-bottom: 12px;padding-bottom: 12px;">
+        <input style="margin-right: 6px;" type="checkbox">
+        <a style="width: 100%;display: flex;" href="#EndingSoon" class="nav-link" data-toggle="tab"><span
+            style="font-size: 14px; color: rgba(0, 0, 0,0.6); font-weight: 600;">Real Estate (6,630) </span></a>
+      </div>
+      <div style="display: flex; margin-bottom: 12px;padding-bottom: 12px;">
+        <input style="margin-right: 6px;" type="checkbox">
+        <a style="width: 100%;display: flex;" href="#EndingSoon" class="nav-link" data-toggle="tab"><span
+            style="font-size: 14px; color: rgba(0, 0, 0,0.6); font-weight: 600;">Job (9,00) </span></a>
+      </div>
+      <div style="display: flex; margin-bottom: 12px;padding-bottom: 12px;">
+        <input style="margin-right: 6px;" type="checkbox">
+        <a style="width: 100%;display: flex;" href="#EndingSoon" class="nav-link" data-toggle="tab"><span
+            style="font-size: 14px; color: rgba(0, 0, 0,0.6); font-weight: 600;">Services (45,356) </span></a>
+      </div>
+    </div>
+    <div>
+
+      <div class="bs-example" style="margin-top: 12px;">
+        <ul class="nav nav-tabs" id="myTab">
+          <li class="nav-item" style="margin-right: 6px; ">
+            <a href="#LatestAds" class="nav-link" data-toggle="tab" style="border: 1px solid rgba(0, 0, 0,0.2); ">Latest
+              Ads</a>
+          </li>
+          <li class="nav-item" style="margin-left: 6px;">
+            <a href="#EndingSoon" class="nav-link" data-toggle="tab"
+              style="border: 1px solid rgba(0, 0, 0,0.2); ">Ending Soon</a>
+          </li>
+          <li class="nav-item" style="margin-left: 6px;">
+            <a href="#EndingSoon" class="nav-link" data-toggle="tab" style="border: 1px solid rgba(0, 0, 0,0.2); ">New
+              Arrivals</a>
+          </li>
+          <li class="nav-item" style="margin-left: 6px;">
+            <a href="#EndingSoon" class="nav-link" data-toggle="tab"
+              style="border: 1px solid rgba(0, 0, 0,0.2); ">Lowest - Highest</a>
+          </li>
+          <li class="nav-item" style="margin-left: 6px;">
+            <a href="#EndingSoon" class="nav-link" data-toggle="tab"
+              style="border: 1px solid rgba(0, 0, 0,0.2); ">Highest - Lowest</a>
+          </li>
+          <li class="nav-item" style="margin-left: 6px;">
+            <a href="#EndingSoon" class="nav-link" data-toggle="tab"
+              style="border: 1px solid rgba(0, 0, 0,0.2); ">Most Rated</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <!-- **********LATEST ADS ******** -->
+          <div class="tab-pane fade" id="LatestAds">
+            <div style="display: flex; justify-content: center;">
+              <div class="main_div" style="border: 1px solid rgba(0, 0, 0,0.2); width: 25%;">
+                <div class="sub_div1"></div>
+                <div style="margin: 16px 26px 16px 26px;">
+                  <div class="sub_div2">
+                    <div>
+                      <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-dot-circle"></span> Electronics</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <div>
+                        <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                            class="fas fa-compass"></span> Califonia</p>
+                      </div>
+                    </div>
+                  </div><br>
+                  <h5>Galaxy A10s Smart Phone</h5><br>
+                  <div style="display: flex; justify-content: center; align-items: center; ">
+                    <div>
+                      <p id="list-p"> call for price</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <p><span style=" color: rgba(0, 0, 0,0.5); font-size: 12px; margin-right: 6px;"
+                          class="fas fa-sync"></span> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-heart"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main_div" style="border: 1px solid rgba(0, 0, 0,0.2); width: 25%">
+                <div class="sub_div1"></div>
+                <div style="margin: 16px 26px 16px 26px;">
+                  <div class="sub_div2">
+                    <div>
+                      <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-dot-circle"></span> Services</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <div>
+                        <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                            class="fas fa-compass"></span> Dortmund</p>
+                      </div>
+                    </div>
+                  </div><br>
+                  <h5>Move Quickly With High Lo...</h5><br>
+                  <div style="display: flex; justify-content: center; align-items: center; ">
+                    <div>
+                      <p id="list-p"> 2 Bids <b style="font-size: 14px; color: rgba(0, 0, 0,0.7)"> $5,010.00</b></p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <p><span style=" color: rgba(0, 0, 0,0.5); font-size: 12px; margin-right: 6px;"
+                          class="fas fa-sync"></span> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-heart"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main_div" style="border: 1px solid rgba(0, 0, 0,0.2); width: 25%;">
+                <div class="sub_div1"></div>
+                <div style="margin: 16px 26px 16px 26px;">
+                  <div class="sub_div2">
+                    <div>
+                      <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-dot-circle"></span> Furniture</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <div>
+                        <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                            class="fas fa-compass"></span> Ostend</p>
+                      </div>
+                    </div>
+                  </div><br>
+                  <h5>Indoor Furniture PE Wicker ...</h5><br>
+                  <div style="display: flex; justify-content: center; align-items: center; ">
+                    <div>
+                      <p id="list-p"> <b style="font-size: 14px; color: rgba(0, 0, 0,0.7)"> Ք90</b> / week</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <p><span style=" color: rgba(0, 0, 0,0.5); font-size: 12px; margin-right: 6px;"
+                          class="fas fa-sync"></span> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-heart"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main_div" style="border: 1px solid rgba(0, 0, 0,0.2); width: 25%;">
+                <div class="sub_div1"></div>
+                <div style="margin: 16px 26px 16px 26px;">
+                  <div class="sub_div2">
+                    <div>
+                      <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-dot-circle"></span> Jobs</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <div>
+                        <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                            class="fas fa-compass"></span> Lodon</p>
+                      </div>
+                    </div>
+                  </div><br>
+                  <h5>Trained Ballet Dancer Is Re...</h5><br>
+                  <div style="display: flex; justify-content: center; align-items: center; ">
+                    <div>
+                      <p id="list-p"> Job - Wanted</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <p><span style=" color: rgba(0, 0, 0,0.5); font-size: 12px; margin-right: 6px;"
+                          class="fas fa-sync"></span> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-heart"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><br>
+
+            <div style="display: flex; justify-content: center;">
+              <div class="main_div" style="border: 1px solid rgba(0, 0, 0,0.2); width: 25%;">
+                <div class="sub_div1"></div>
+                <div style="margin: 16px 26px 16px 26px;">
+                  <div class="sub_div2">
+                    <div>
+                      <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-dot-circle"></span> Vehicles</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <div>
+                        <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                            class="fas fa-compass"></span> Sundsvall</p>
+                      </div>
+                    </div>
+                  </div><br>
+                  <h5>Polaris 600 Assault 144 Sno...</h5><br>
+                  <div style="display: flex; justify-content: center; align-items: center; ">
+                    <div>
+                      <p id="list-p"> 450€ <b style="font-size: 14px; color: rgba(0, 0, 0,0.7)"> 400€</b></p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <p><span style=" color: rgba(0, 0, 0,0.5); font-size: 12px; margin-right: 6px;"
+                          class="fas fa-sync"></span> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-heart"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main_div" style="border: 1px solid rgba(0, 0, 0,0.2); width: 25%;">
+                <div class="sub_div1"></div>
+                <div style="margin: 16px 26px 16px 26px;">
+                  <div class="sub_div2">
+                    <div>
+                      <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-dot-circle"></span> Real Estate</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <div>
+                        <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                            class="fas fa-compass"></span> Paris</p>
+                      </div>
+                    </div>
+                  </div><br>
+                  <h5>Apartment In Spain For Sal...</h5><br>
+                  <div style="display: flex; justify-content: center; align-items: center; ">
+                    <div>
+                      <p id="list-p"> call for price</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <p><span style=" color: rgba(0, 0, 0,0.5); font-size: 12px; margin-right: 6px;"
+                          class="fas fa-sync"></span> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-heart"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main_div" style="border: 1px solid rgba(0, 0, 0,0.2); width: 25%;">
+                <div class="sub_div1"></div>
+                <div style="margin: 16px 26px 16px 26px;">
+                  <div class="sub_div2">
+                    <div>
+                      <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-dot-circle"></span> Electronics</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <div>
+                        <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                            class="fas fa-compass"></span> Berlin</p>
+                      </div>
+                    </div>
+                  </div><br>
+                  <h5>Fashion Luxury Men Date S...</h5><br>
+                  <div style="display: flex; justify-content: center; align-items: center; ">
+                    <div>
+                      <p id="list-p"> 1 Bid <b style="font-size: 14px; color: rgba(0, 0, 0,0.7)"> $70.00</b></p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <p><span style=" color: rgba(0, 0, 0,0.5); font-size: 12px; margin-right: 6px;"
+                          class="fas fa-sync"></span> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-heart"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main_div" style="border: 1px solid rgba(0, 0, 0,0.2); width: 25%;">
+                <div class="sub_div1"></div>
+                <div style="margin: 16px 26px 16px 26px;">
+                  <div class="sub_div2">
+                    <div>
+                      <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-dot-circle"></span> Electronics</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <div>
+                        <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                            class="fas fa-compass"></span> Vienna</p>
+                      </div>
+                    </div>
+                  </div><br>
+                  <h5>Customized Apple imac 21.5...</h5><br>
+                  <div style="display: flex; justify-content: center; align-items: center; ">
+                    <div>
+                      <p id="list-p"> Buying</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <p><span style=" color: rgba(0, 0, 0,0.5); font-size: 12px; margin-right: 6px;"
+                          class="fas fa-sync"></span> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-heart"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><br>
+
+            <div style="display: flex; justify-content: center;">
+              <div class="main_div" style="border: 1px solid rgba(0, 0, 0,0.2); width: 25%;">
+                <div class="sub_div1"></div>
+                <div style="margin: 16px 26px 16px 26px;">
+                  <div class="sub_div2">
+                    <div>
+                      <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-dot-circle"></span> Electronics</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <div>
+                        <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                            class="fas fa-compass"></span> Columbia</p>
+                      </div>
+                    </div>
+                  </div><br>
+                  <h5>New X5SW-1 2.4GHz 4CH 6 ...</h5><br>
+                  <div style="display: flex; justify-content: center; align-items: center; ">
+                    <div>
+                      <p id="list-p"> Exchange </p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <p><span style=" color: rgba(0, 0, 0,0.5); font-size: 12px; margin-right: 6px;"
+                          class="fas fa-sync"></span> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-heart"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main_div" style="border: 1px solid rgba(0, 0, 0,0.2); width: 25%;">
+                <div class="sub_div1"></div>
+                <div style="margin: 16px 26px 16px 26px;">
+                  <div class="sub_div2">
+                    <div>
+                      <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-dot-circle"></span> Vehicles</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <div>
+                        <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                            class="fas fa-compass"></span> Paris</p>
+                      </div>
+                    </div>
+                  </div><br>
+                  <h5>2012 Audi R8 GT Spyder Co...</h5><br>
+                  <div style="display: flex; justify-content: center; align-items: center; ">
+                    <div>
+                      <p id="list-p"> Gift</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <p><span style=" color: rgba(0, 0, 0,0.5); font-size: 12px; margin-right: 6px;"
+                          class="fas fa-sync"></span> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-heart"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main_div" style="border: 1px solid rgba(0, 0, 0,0.2); width: 25%;">
+                <div class="sub_div1"></div>
+                <div style="margin: 16px 26px 16px 26px;">
+                  <div class="sub_div2">
+                    <div>
+                      <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-dot-circle"></span> Vehicles </p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <div>
+                        <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                            class="fas fa-compass"></span> Zurich</p>
+                      </div>
+                    </div>
+                  </div><br>
+                  <h5>Yamaha 2017 RD350 R5 Wit...</h5><br>
+                  <div style="display: flex; justify-content: center; align-items: center; ">
+                    <div>
+                      <p id="list-p"> 0 Bids <b style="font-size: 14px; color: rgba(0, 0, 0,0.7)"> 1500Ք</b></p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <p><span style=" color: rgba(0, 0, 0,0.5); font-size: 12px; margin-right: 6px;"
+                          class="fas fa-sync"></span> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-heart"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main_div" style="border: 1px solid rgba(0, 0, 0,0.2); width: 25%;">
+                <div class="sub_div1"></div>
+                <div style="margin: 16px 26px 16px 26px;">
+                  <div class="sub_div2">
+                    <div>
+                      <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-dot-circle"></span> Services</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <div>
+                        <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                            class="fas fa-compass"></span> Nantes</p>
+                      </div>
+                    </div>
+                  </div><br>
+                  <h5>Construction Company Wit...</h5><br>
+                  <div style="display: flex; justify-content: center; align-items: center; ">
+                    <div>
+                      <p id="list-p"> Buying</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <p><span style=" color: rgba(0, 0, 0,0.5); font-size: 12px; margin-right: 6px;"
+                          class="fas fa-sync"></span> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-heart"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><br>
+            <nav aria-label="Page navigation example" style="text-align: center;">
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- ************** ENDING SOON ***************** -->
+          <div class="tab-pane fade" id="EndingSoon">
+            <div style="display: flex; justify-content: center;">
+              <div class="main_div" style="border: 1px solid rgba(0, 0, 0,0.2); width: 25%;">
+                <div class="sub_div1"></div>
+                <div style="margin: 16px 26px 16px 26px;">
+                  <div class="sub_div2">
+                    <div>
+                      <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-dot-circle"></span> Electronics</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <div>
+                        <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                            class="fas fa-compass"></span> Califonia</p>
+                      </div>
+                    </div>
+                  </div><br>
+                  <h5>Galaxy A10s Smart Phone</h5><br>
+                  <div style="display: flex; justify-content: center; align-items: center; ">
+                    <div>
+                      <p id="list-p"> call for price</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <p><span style=" color: rgba(0, 0, 0,0.5); font-size: 12px; margin-right: 6px;"
+                          class="fas fa-sync"></span> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-heart"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main_div" style="border: 1px solid rgba(0, 0, 0,0.2); width: 25%">
+                <div class="sub_div1"></div>
+                <div style="margin: 16px 26px 16px 26px;">
+                  <div class="sub_div2">
+                    <div>
+                      <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-dot-circle"></span> Services</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <div>
+                        <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                            class="fas fa-compass"></span> Dortmund</p>
+                      </div>
+                    </div>
+                  </div><br>
+                  <h5>Move Quickly With High Lo...</h5><br>
+                  <div style="display: flex; justify-content: center; align-items: center; ">
+                    <div>
+                      <p id="list-p"> 2 Bids <b style="font-size: 14px; color: rgba(0, 0, 0,0.7)"> $5,010.00</b></p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <p><span style=" color: rgba(0, 0, 0,0.5); font-size: 12px; margin-right: 6px;"
+                          class="fas fa-sync"></span> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-heart"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main_div" style="border: 1px solid rgba(0, 0, 0,0.2); width: 25%;">
+                <div class="sub_div1"></div>
+                <div style="margin: 16px 26px 16px 26px;">
+                  <div class="sub_div2">
+                    <div>
+                      <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-dot-circle"></span> Furniture</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <div>
+                        <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                            class="fas fa-compass"></span> Ostend</p>
+                      </div>
+                    </div>
+                  </div><br>
+                  <h5>Indoor Furniture PE Wicker ...</h5><br>
+                  <div style="display: flex; justify-content: center; align-items: center; ">
+                    <div>
+                      <p id="list-p"> <b style="font-size: 14px; color: rgba(0, 0, 0,0.7)"> Ք90</b> / week</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <p><span style=" color: rgba(0, 0, 0,0.5); font-size: 12px; margin-right: 6px;"
+                          class="fas fa-sync"></span> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-heart"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main_div" style="border: 1px solid rgba(0, 0, 0,0.2); width: 25%;">
+                <div class="sub_div1"></div>
+                <div style="margin: 16px 26px 16px 26px;">
+                  <div class="sub_div2">
+                    <div>
+                      <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-dot-circle"></span> Jobs</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <div>
+                        <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                            class="fas fa-compass"></span> Lodon</p>
+                      </div>
+                    </div>
+                  </div><br>
+                  <h5>Trained Ballet Dancer Is Re...</h5><br>
+                  <div style="display: flex; justify-content: center; align-items: center; ">
+                    <div>
+                      <p id="list-p"> Job - Wanted</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <p><span style=" color: rgba(0, 0, 0,0.5); font-size: 12px; margin-right: 6px;"
+                          class="fas fa-sync"></span> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-heart"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><br>
+
+            <div style="display: flex; justify-content: center;">
+              <div class="main_div" style="border: 1px solid rgba(0, 0, 0,0.2); width: 25%;">
+                <div class="sub_div1"></div>
+                <div style="margin: 16px 26px 16px 26px;">
+                  <div class="sub_div2">
+                    <div>
+                      <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-dot-circle"></span> Vehicles</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <div>
+                        <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                            class="fas fa-compass"></span> Sundsvall</p>
+                      </div>
+                    </div>
+                  </div><br>
+                  <h5>Polaris 600 Assault 144 Sno...</h5><br>
+                  <div style="display: flex; justify-content: center; align-items: center; ">
+                    <div>
+                      <p id="list-p"> 450€ <b style="font-size: 14px; color: rgba(0, 0, 0,0.7)"> 400€</b></p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <p><span style=" color: rgba(0, 0, 0,0.5); font-size: 12px; margin-right: 6px;"
+                          class="fas fa-sync"></span> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-heart"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main_div" style="border: 1px solid rgba(0, 0, 0,0.2); width: 25%;">
+                <div class="sub_div1"></div>
+                <div style="margin: 16px 26px 16px 26px;">
+                  <div class="sub_div2">
+                    <div>
+                      <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-dot-circle"></span> Real Estate</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <div>
+                        <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                            class="fas fa-compass"></span> Paris</p>
+                      </div>
+                    </div>
+                  </div><br>
+                  <h5>Apartment In Spain For Sal...</h5><br>
+                  <div style="display: flex; justify-content: center; align-items: center; ">
+                    <div>
+                      <p id="list-p"> call for price</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <p><span style=" color: rgba(0, 0, 0,0.5); font-size: 12px; margin-right: 6px;"
+                          class="fas fa-sync"></span> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-heart"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main_div" style="border: 1px solid rgba(0, 0, 0,0.2); width: 25%;">
+                <div class="sub_div1"></div>
+                <div style="margin: 16px 26px 16px 26px;">
+                  <div class="sub_div2">
+                    <div>
+                      <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-dot-circle"></span> Electronics</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <div>
+                        <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                            class="fas fa-compass"></span> Berlin</p>
+                      </div>
+                    </div>
+                  </div><br>
+                  <h5>Fashion Luxury Men Date S...</h5><br>
+                  <div style="display: flex; justify-content: center; align-items: center; ">
+                    <div>
+                      <p id="list-p"> 1 Bid <b style="font-size: 14px; color: rgba(0, 0, 0,0.7)"> $70.00</b></p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <p><span style=" color: rgba(0, 0, 0,0.5); font-size: 12px; margin-right: 6px;"
+                          class="fas fa-sync"></span> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-heart"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main_div" style="border: 1px solid rgba(0, 0, 0,0.2); width: 25%;">
+                <div class="sub_div1"></div>
+                <div style="margin: 16px 26px 16px 26px;">
+                  <div class="sub_div2">
+                    <div>
+                      <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-dot-circle"></span> Electronics</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <div>
+                        <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                            class="fas fa-compass"></span> Vienna</p>
+                      </div>
+                    </div>
+                  </div><br>
+                  <h5>Customized Apple imac 21.5...</h5><br>
+                  <div style="display: flex; justify-content: center; align-items: center; ">
+                    <div>
+                      <p id="list-p"> Buying</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <p><span style=" color: rgba(0, 0, 0,0.5); font-size: 12px; margin-right: 6px;"
+                          class="fas fa-sync"></span> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-heart"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><br>
+
+            <div style="display: flex; justify-content: center;">
+              <div class="main_div" style="border: 1px solid rgba(0, 0, 0,0.2); width: 25%;">
+                <div class="sub_div1"></div>
+                <div style="margin: 16px 26px 16px 26px;">
+                  <div class="sub_div2">
+                    <div>
+                      <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-dot-circle"></span> Electronics</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <div>
+                        <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                            class="fas fa-compass"></span> British Columbia</p>
+                      </div>
+                    </div>
+                  </div><br>
+                  <h5>New X5SW-1 2.4GHz 4CH 6 ...</h5><br>
+                  <div style="display: flex; justify-content: center; align-items: center; ">
+                    <div>
+                      <p id="list-p"> Exchange </p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <p><span style=" color: rgba(0, 0, 0,0.5); font-size: 12px; margin-right: 6px;"
+                          class="fas fa-sync"></span> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-heart"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main_div" style="border: 1px solid rgba(0, 0, 0,0.2); width: 25%;">
+                <div class="sub_div1"></div>
+                <div style="margin: 16px 26px 16px 26px;">
+                  <div class="sub_div2">
+                    <div>
+                      <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-dot-circle"></span> Vehicles</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <div>
+                        <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                            class="fas fa-compass"></span> Paris</p>
+                      </div>
+                    </div>
+                  </div><br>
+                  <h5>2012 Audi R8 GT Spyder Co...</h5><br>
+                  <div style="display: flex; justify-content: center; align-items: center; ">
+                    <div>
+                      <p id="list-p"> Gift</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <p><span style=" color: rgba(0, 0, 0,0.5); font-size: 12px; margin-right: 6px;"
+                          class="fas fa-sync"></span> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-heart"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main_div" style="border: 1px solid rgba(0, 0, 0,0.2); width: 25%;">
+                <div class="sub_div1"></div>
+                <div style="margin: 16px 26px 16px 26px;">
+                  <div class="sub_div2">
+                    <div>
+                      <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-dot-circle"></span> Vehicles </p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <div>
+                        <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                            class="fas fa-compass"></span> Zurich</p>
+                      </div>
+                    </div>
+                  </div><br>
+                  <h5>Yamaha 2017 RD350 R5 Wit...</h5><br>
+                  <div style="display: flex; justify-content: center; align-items: center; ">
+                    <div>
+                      <p id="list-p"> 0 Bids <b style="font-size: 14px; color: rgba(0, 0, 0,0.7)"> 1500Ք</b></p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <p><span style=" color: rgba(0, 0, 0,0.5); font-size: 12px; margin-right: 6px;"
+                          class="fas fa-sync"></span> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-heart"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main_div" style="border: 1px solid rgba(0, 0, 0,0.2); width: 25%;">
+                <div class="sub_div1"></div>
+                <div style="margin: 16px 26px 16px 26px;">
+                  <div class="sub_div2">
+                    <div>
+                      <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-dot-circle"></span> Services</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <div>
+                        <p id="list-p"> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                            class="fas fa-compass"></span> Nantes</p>
+                      </div>
+                    </div>
+                  </div><br>
+                  <h5>Construction Company Wit...</h5><br>
+                  <div style="display: flex; justify-content: center; align-items: center; ">
+                    <div>
+                      <p id="list-p"> Buying</p>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <p><span style=" color: rgba(0, 0, 0,0.5); font-size: 12px; margin-right: 6px;"
+                          class="fas fa-sync"></span> <span style=" color: rgba(0, 0, 0,0.5); font-size: 12px;"
+                          class="fas fa-heart"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><br>
+            <nav aria-label="Page navigation example" style="text-align: center;">
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div><br><br><br><br>
+
+    </div>
+  </section><br><br>
+  <!-- ************ MARKET END ***************** -->    
+
+  <!-- ************ FOOTER START -->
+  <footer>
+    <div class="row">
+      <div class="footer-div">
+        <h6>Copyright @ 2020 - FLIPIT <span class="fa fa-heart"></span> All Rights Reserved</h6>
+        <div style="display:flex; justify-content: center; align-items: center;">
+          <i style="color: white; font-size: 14px;" id="icons" class="fab fa-facebook"></i>
+          <i style="color: white; font-size: 14px;" id="icons" class="fab fa-twitter"></i>
+          <i style="color: white; font-size: 14px;" id="icons" class="fab fa-instagram"></i>
+          <i style="color: white; font-size: 14px;" id="icons" class="fab fa-youtube"></i>
+        </div>
+        <div style="display: flex;">
+          <a href="#" style="color: white;">
+            <h5 style="margin: 0px 4px 4px 0px;">FAQ</h5>
+          </a>
+          <a href="blog.html" style="color: white;">
+            <h5 style="margin: 0px 4px 0px 4px;">News</h5>
+          </a>
+          <a href="contact_us.html" style="color: white;">
+            <h5 style="margin: 0px 4px 0px 4px;">Contact</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- **************FOOTER END -->
+  <script src="JS/market.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script src="JS/Main.js"></script>
+  <script src="JS/market.js"></script>
+</body>
+
+</html>
