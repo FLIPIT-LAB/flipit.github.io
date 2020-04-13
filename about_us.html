@@ -1,0 +1,349 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flip It | How It Works</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css"> 
+    <link rel="stylesheet" href="CSS/sample.css">
+    <link rel="stylesheet" href="CSS/how_it_works.css">
+    <link rel="stylesheet" href="CSS/all.css">
+</head>
+
+<body style="background-color: whitesmoke;">
+
+  <!-- NAV BAR ************ -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <div class="Brand">
+    <a class="navbar-brand" href="#">FLiPiT</a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item ">
+          <a class="nav-link" href="index.html">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="how_it_works.html">How It Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sell.html">Sell</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="about_us.html">About Us <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact_us.html">Contact Us</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <a data-toggle="modal" data-target="#exampleModalCenter" id="signIn">Sign in or</a>  
+        <button class="nav_btn" type="button" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-plus-square" style="padding: 6px;"></i>Create Account</button>
+      </form>
+    </div>
+  </nav>
+<!-- NAV BAR END -->
+
+  <!-- ########### SIGNUP MODAL BOX START ********-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">Register</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-left: auto;">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div><br>
+        <form class="modal-body">
+            <div class="formgroup-parent">
+            <div class="formgroup-child">
+            <label>Username *</label>
+            <input type="text" placeholder="Your desired username">
+            </div>
+
+            <div class="formgroup-child">
+                <label>Email *</label>
+                <input type="email" placeholder="it will be verified">
+                </div>
+            </div><br><br>
+
+            <div class="formgroup-password">
+                <div style="flex-direction: column; flex-grow: 1;">
+                    <label>Password *</label>
+                    <div class="password-div">
+                        <input id="password-field" type="password" name="password" class="search_input" placeholder="use a strong password" style="padding: 0px; margin: 0px;">
+                        <i toggle="#password-field" class="fa fa-fw fa-eye icon toggle-password toggler"></i>
+                      </div>
+                </div>
+
+                <div style="flex-direction: column; flex-grow: 1;">
+                    <label>Repeat Password *</label>
+                    <div class="password-div">
+                        <input id="password-field2" type="password" name="password" class="search_input" placeholder="to make sure it is correct" style="padding: 0px; margin: 0px;">
+                        <i toggle="#password-field2" class="fa fa-fw fa-eye icon toggle-password toggler"></i>
+                      </div>
+                </div>
+                </div><br>
+                
+                <div style="display: flex; margin-bottom: 30px;">
+                    <input type="checkbox">
+                    <span style="font-size: 13px;"> I agree to terms and conditions</span>
+                </div><br>
+
+                <button  type="submit" class="register_btn">Register</button>
+
+                <div class="or-div">
+                    <div class="line"></div>
+                    <span style="font-size:14px">OR</span>
+                    <div class="line"></div>
+                </div>
+
+                <div class="sign-in">
+                <p class="signin-p">Sign in with</p>
+
+                <div style="display: flex;" >
+                    <div class="social_div">
+                    <button id="social_btn" class="register_btn social_media"><span class="fab fa-facebook"></span> Facebook</button>
+                    </div>
+                    <div class="social_div">
+                        <button id="social_btn" style=" background-color: #38A1F3; " class="register_btn"><span class="fab fa-twitter"></span> Twitter</button>
+                     </div>
+                     <div class="social_div">
+                        <button id="social_btn" style=" background-color:royalblue" class="register_btn"><span class="fab fa-google"></span> Google</button>
+                     </div>
+                </div><br>
+
+                <p class="signin-p"><a href="http://www.google.com" style="color: black;">Already have account? Login here</a></p>
+                </div>
+        </form>
+      </div>
+    </div>
+  </div> 
+  <!-- *********SIGNUP MODAL BOX END -->
+
+  <!-- ******SIGNIN MODAL BOX -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="display: flex;">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Sign In</h5>
+        <div style="margin-left: auto;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+      </div>
+        <form class="modal-body" style="display: flex; justify-content: center; flex-direction: column;">
+          <div style="display: flex; flex-grow: 1;margin-right: 16px; margin-bottom: 30px; flex-direction: column;">
+          <label style="font-size: 12px;">Username *</label>
+          <input type="text" placeholder="Please enter your username">
+          </div>
+
+              <div style="flex-direction: column; flex-grow: 1; margin-bottom: 30px;">
+                  <label style="font-size: 12px;">Password *</label><br>
+                  <div style="display: flex; flex-grow: 1;  background-color: white; border-bottom: 1px solid #E5E7E9; margin-right: 16px;">
+                      <input id="password-field3" type="password" name="password" class="search_input" placeholder="Please enter your password" style="padding: 0px; margin: 0px;">
+                      <i toggle="#password-field3" class="fa fa-fw fa-eye icon toggle-password3" style=" color: rgba(0, 0, 0,0.5); padding: 0px; margin: 0px; font-size: 12px;"></i>
+                    </div>
+              </div>
+
+              <button  type="submit" class="register_btn">Register</button><br>
+
+              <div style="display: flex; align-items: center; justify-content: center;">
+                  <div style="background-color: #E5E7E9; height: 1px; flex-grow: 1; margin-right: 8px;"></div>
+                  <span style="font-size:14px">OR</span>
+                  <div style="background-color: #E5E7E9; height: 1px; flex-grow: 1; margin-left: 8px;"></div>
+              </div><br><br>
+
+              <div style="display: flex; justify-content: center; flex-direction: column;">
+              <p style="font-size:14px; text-align:center">Sign in with</p>
+
+              <div style="display: flex;" >
+                <div class="social_div">
+                  <button id="social_btn" style=" background-color: #38A1F3;" class="register_btn"><span class="fab fa-facebook"></span> Facebook</button>
+               </div>
+                  <div class="social_div">
+                    <button id="social_btn" style=" background-color: #38A1F3;" class="register_btn"><span class="fab fa-twitter"></span> Twitter</button>
+                 </div>
+                 <div class="social_div">
+                  <button id="social_btn" style=" background-color:royalblue" class="register_btn"><span class="fab fa-google"></span> Google</button>
+               </div>
+                   
+              </div><br>
+
+              <p style="font-size:14px; text-align:center"><a href="#" style="color: black;">Don't have account? register here</a></p>
+              </div>
+      </form>
+    </div>
+  </div>
+</div>
+ <!-- ******SIGNIN MODAL BOX -->
+
+  <!-- HERO PAGE -->
+  <div style="background-color:whitesmoke">
+    
+    <div class="hero">
+      <div class="hero_overlay">
+        <div class="bcrumbs">
+          <h2 class="bcrumbs-title">ABOUT US</h2>
+          <ul class="breadcrumbs">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how_it_works.html">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="binocular-div">
+          <span class="fas fa-binoculars" style="font-size: 2em; color: white;"></span>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="input-div">
+        <input type="text" class="search_input" placeholder="Search for...">
+        <i class="fas fa-bullhorn" style="padding: 16px; color: rgba(0, 0, 0,0.5);"></i>
+      </div>
+      <div class="input-div alt-div">
+        <input type="text" class="search_input" placeholder="Located in...">
+        <i class="fas fa-compass" style="padding: 16px; color: rgba(0, 0, 0,0.5);"></i>
+      </div>
+      <div class="input-div alt-div">
+        <input type="text" class="search_input" placeholder="In Category">
+        <i class="fas fa-dot-circle" style="padding: 16px; color: rgba(0, 0, 0,0.5);"></i>
+      </div>
+     <button class="search-btn">Search</button>
+    </div>
+  </div><br><br>
+  
+  <div class="bg-light">
+    <div class="container py-5">
+      <div class="row h-100 align-items-center py-5">
+        <div class="col-lg-6">
+          <h1 class="display-4">About us </h1>
+          <p class="lead text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="col-lg-6 d-none d-lg-block"><img src="IMAGES/about-img/about-img1.png" alt="" class="img-fluid"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-white py-5">
+    <div class="container py-5">
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6 order-2 order-lg-1"><i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
+          <h2 class="font-weight-light">Lorem ipsum dolor sit amet</h2>
+          <p class="font-italic text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><a href="#" class="btn btn-light px-5 rounded-pill shadow-sm">Learn More</a>
+        </div>
+        <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="IMAGES/about-img/about-img2.png" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-5 px-5 mx-auto"><img src="IMAGES/about-img/about-img3.png" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+        <div class="col-lg-6"><i class="fa fa-leaf fa-2x mb-3 text-primary"></i>
+          <h2 class="font-weight-light">Lorem ipsum dolor sit amet</h2>
+          <p class="font-italic text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><a href="#" class="btn btn-light px-5 rounded-pill shadow-sm">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-light py-5">
+    <div class="container py-5">
+      <div class="row mb-4">
+        <div class="col-lg-5">
+          <h2 class="display-4 font-weight-light">Our team</h2>
+          <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      </div>
+  
+      <div class="row text-center">
+        <!-- Team item-->
+        <div class="col-xl-3 col-sm-6 mb-5">
+          <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834132/avatar-4_ozhrib.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+            <h5 class="mb-0">Manuella Nevoresky</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+            <ul class="social mb-1 list-inline mt-3">
+              <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- End-->
+  
+        <!-- Team item-->
+        <div class="col-xl-3 col-sm-6 mb-5">
+          <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834130/avatar-3_hzlize.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+            <h5 class="mb-0">Samuel Hardy</h5><span class="small text-uppercase text-muted">Developer</span>
+            <ul class="social mb-1 list-inline mt-3">
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+          </div>
+        </div>
+        <!-- End-->
+  
+        <!-- Team item-->
+        <div class="col-xl-3 col-sm-6 mb-5">
+          <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834133/avatar-2_f8dowd.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+            <h5 class="mb-0">Tom Sunderland</h5><span class="small text-uppercase text-muted">Researcher</span>
+            <ul class="social mb-1 list-inline mt-3">
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+          </div>
+        </div>
+        <!-- End-->
+  
+        <!-- Team item-->
+        <div class="col-xl-3 col-sm-6 mb-5">
+          <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834133/avatar-1_s02nlg.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+            <h5 class="mb-0">John Tarly</h5><span class="small text-uppercase text-muted">Designer</span>
+            <ul class="social mb-1 list-inline mt-3">
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+          </div>
+        </div>
+        <!-- End-->
+  
+      </div>
+    </div>
+  </div>
+
+   <!-- ************ FOOTER START -->
+   <footer>
+    <div class="footer-div">
+        <h6 style="font-size: 12px;">Copyright @ 2020 - FLIPIT <span class="fa fa-heart"></span> All Rights Reserved</h6>
+        <div style="display:flex; justify-content: center; align-items: center;">
+            <i style="color: white; font-size: 14px;" id="icons" class="fab fa-facebook"></i>
+            <i style="color: white; font-size: 14px;" id="icons" class="fab fa-twitter"></i>
+            <i style="color: white; font-size: 14px;" id="icons" class="fab fa-instagram"></i>
+            <i style="color: white; font-size: 14px;" id="icons" class="fab fa-youtube"></i>
+        </div>
+        <div class="footer-ref">
+        <a href="#" style="margin: 0px 4px 0px 4px;"><h6>FAQ</h6></a>
+        <a href="blog.html" style="margin: 0px 4px 0px 4px;"><h6>News</h6></a>
+        <a href="contact_us.html" style="margin: 0px 4px 0px 4px;"><h6>Contact</h6></a>
+        </div>
+    </div>
+</footer>
+<!-- **************FOOTER END -->
+
+  <script src="JS/jquery.js"></script>
+  <script src="JS/bootstrap.min.js"></script>
+<script src="JS/sample.js"></script>
+
+</body>
+
+</html>
