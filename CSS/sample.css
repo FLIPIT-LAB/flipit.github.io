@@ -237,9 +237,10 @@ label{
 
 
 #signIn:hover{
-  background-color: dodgerblue;
+  font-weight:bold;
   padding: 8px 16px ;
-  color: white;
+  color: black;
+  transition: .2s ease;
 }
 
 .signin-p{
