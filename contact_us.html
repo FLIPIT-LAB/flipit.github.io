@@ -1,54 +1,55 @@
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Flip It | How It Works</title>
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="CSS/Main.css">
-  <link rel="stylesheet" href="CSS/all.css">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flip It | How It Works</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css"> 
+    <link rel="stylesheet" href="CSS/sample.css">
+    <link rel="stylesheet" href="CSS/how_it_works.css">
+    <link rel="stylesheet" href="CSS/all.css">
 </head>
 
-<body data-spy="scroll" data-target="#myScrollspy" style="background-color: whitesmoke;">
+<body style="background-color: whitesmoke;">
 
-  <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="205"  style="background-color: white;">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-             <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="#" style="color: black; font-size: 16px; font-weight: bolder;">FLiPiT</a> </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="how_it_works.html">How It Works</a></li>
-          <li>
-            <a href="sell.html" style="cursor: pointer;">Sell</a>
-            <!-- <ul class="nav-dropdown">
-              <li>
-                <a href="#">Sample Ads</a>
-              </li>
-              <li>
-                <a href="#">Sample Ads</a>
-              </li>
-              <li>
-                <a href="#">Sample Ads</a>
-              </li>
-            </ul> -->
-          </li>
-          <li><a href="blog.html" >Blog</a></li>
-          <li><a href="contact_us.html">Contact Us</a></li>
-        </ul>
-      </div>
-      <div style="display:flex; justify-content: center; align-items: center;">
-        <a data-toggle="modal" data-target="#exampleModalCenter" class="signIn">Sign in or</a>
-        <button class="nav_btn" data-toggle="modal" data-target="#exampleModal"> <i class="fas fa-plus-square" style="padding: 6px;"></i> create Account </button>
-      </div>
-    </div>
-  </nav><br><br>
+ <!-- NAV BAR ************ -->
+ <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+  <div class="Brand">
+  <a class="navbar-brand" href="#">FLiPiT</a>
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li>
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="how_it_works.html">How It Works</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sell.html">Sell</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="blog.html">Blog</a>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" href="about_us.html">About Us</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="contact_us.html">Contact Us<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <a data-toggle="modal" data-target="#exampleModalCenter" id="signIn">Sign in or</a>  
+      <button class="nav_btn" type="button" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-plus-square" style="padding: 6px;"></i>Create Account</button>
+    </form>
+  </div>
+</nav>
+<!-- NAV BAR END -->
 
   <!-- ########### SIGNUP MODAL BOX START ********-->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -165,15 +166,16 @@
               <p style="font-size:14px; text-align:center">Sign in with</p>
 
               <div style="display: flex;" >
-                  <div style="margin: 8px; flex-grow: 1;">
-                  <button style="padding: 8px 80px 8px 8px; " class="register_btn"><span class="fab fa-facebook"></span> Facebook</button>
-                  </div>
-                  <div style="margin: 8px; flex-grow: 1;">
-                      <button style="padding: 8px 80px 8px 8px; background-color: #38A1F3; " class="register_btn"><span class="fab fa-twitter"></span> Twitter</button>
-                   </div>
-                   <div style="margin: 8px; flex-grow: 1;">
-                      <button style="padding: 8px 80px 8px 8px; background-color:royalblue" class="register_btn"><span class="fab fa-google"></span> Google</button>
-                   </div>
+                <div class="social_div">
+                  <button id="social_btn" style=" background-color: #38A1F3;" class="register_btn"><span class="fab fa-facebook"></span> Facebook</button>
+               </div>
+                  <div class="social_div">
+                    <button id="social_btn" style=" background-color: #38A1F3;" class="register_btn"><span class="fab fa-twitter"></span> Twitter</button>
+                 </div>
+                 <div class="social_div">
+                  <button id="social_btn" style=" background-color:royalblue" class="register_btn"><span class="fab fa-google"></span> Google</button>
+               </div>
+                   
               </div><br>
 
               <p style="font-size:14px; text-align:center"><a href="#" style="color: black;">Don't have account? register here</a></p>
@@ -189,15 +191,15 @@
     
     <div class="hero">
       <div class="hero_overlay">
-        <div style="margin-right: auto">
-          <h3 style="color: white;">CONTACT US</h3>
+        <div class="bcrumbs">
+          <h2 class="bcrumbs-title">CONTACT US</h2>
           <ul class="breadcrumbs">
             <li><a href="index.html">Home</a></li>
-            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="how_it_works.html">Contact Us</a></li>
           </ul>
         </div>
 
-        <div style="margin-left: auto">
+        <div class="binocular-div">
           <span class="fas fa-binoculars" style="font-size: 2em; color: white;"></span>
         </div>
       </div>
@@ -207,11 +209,11 @@
         <input type="text" class="search_input" placeholder="Search for...">
         <i class="fas fa-bullhorn" style="padding: 16px; color: rgba(0, 0, 0,0.5);"></i>
       </div>
-      <div class="input-div">
+      <div class="input-div alt-div1">
         <input type="text" class="search_input" placeholder="Located in...">
         <i class="fas fa-compass" style="padding: 16px; color: rgba(0, 0, 0,0.5);"></i>
       </div>
-      <div class="input-div">
+      <div class="input-div alt-div2">
         <input type="text" class="search_input" placeholder="In Category">
         <i class="fas fa-dot-circle" style="padding: 16px; color: rgba(0, 0, 0,0.5);"></i>
       </div>
@@ -220,17 +222,16 @@
   </div><br><br><br><br>
   
 
-  <!-- BLOG DETAILS -->
-  <article style="display: flex;flex-direction:column; justify-content:center; align-items:center; background-color: whitesmoke;">
-    <div class="cover">
-        
-        <div class="parent-div" style="min-height:300px;">
-          <div style="width: 40%;">
+  <!-- CONTACT US DETAILS -->
+ <article style="display: flex;flex-direction:column; justify-content:center; align-items:center; background-color: whitesmoke;">
+    <div class="cover">      
+        <div id="parent-div">
+          <div class="left-panel">
             <h2>Contact Us</h2><hr>
             <h4 style="color: rgba(0, 0, 0,0.5);">Address</h4>
             <p style="font-size: 12px;">FLip iT Labs <br> 6950 S. East Legon Road <br> Centennial, CO 80112</p>
             <h4 style="color: rgba(0, 0, 0,0.5);">Telephone</h4>
-            <p style="font-size: 12px;"> Office : +233 28394057384 <br> Fax : +233 748596738 <br>Home : +233 647583748</p>
+            <p style="font-size: 12px;"> Office : +1-541-754-3010 <br> Fax : 212-555-1234 <br>Home : 1-541-754-3010</p>
             <h4 style="color: rgba(0, 0, 0,0.5);">Email</h4>
             <p style="font-size: 12px;"> flipitlabs@gmail.com </p>
             <div>
@@ -241,19 +242,19 @@
                     <a href="https://web.facebook.com/isaacyoungson0/" style="color: black; font-size: 14px;" id="icons" class="fab fa-linkedin"></a>
             </div><hr>
           </div>
-          <div style="margin-left: auto;">
+          <div class="right-panel">
             <form>
-                <div style="justify-content: center; align-items: center;">
-                <label style="color: rgba(0, 0, 0,0.5);"> Name : </label>
-                <input type="text" style="margin-right: 16px;">
+                <div class="user-info">
+                <label style="color: rgba(0, 0, 0,0.5); font-weight: bold;"> Name : </label>
+                <input type="text" class="contact-input">
 
-                <label style="color: rgba(0, 0, 0,0.5);">Email : </label>
-                <input type="text" style="margin-right: 16px;">
+                <label style="color: rgba(0, 0, 0,0.5);font-weight: bold;">Email : </label>
+                <input type="text" class="contact-input">
                 </div><br><br>  
 
                 <div>
                     <label style="color: rgba(0, 0, 0,0.5);">Your Message : </label>
-                    <textarea style="width: 100%; min-height: 150px;"></textarea>
+                    <textarea style="width: 100%; min-height:150px; border: 1px solid rgba(0, 0, 0,0.3);"></textarea>
                 </div><br>
 
                 <div>
@@ -263,15 +264,30 @@
           </div>
       </div>
     </div><br><br>
-  </article><br><br><br><br>
+  </article><br>
 
+  <!-- ************ FOOTER START -->
+  <footer>
+    <div class="footer-div">
+        <h6 style="font-size: 12px;">Copyright @ 2020 - FLIPIT <span class="fa fa-heart"></span> All Rights Reserved</h6>
+        <div style="display:flex; justify-content: center; align-items: center;">
+            <i style="color: white; font-size: 14px;" id="icons" class="fab fa-facebook"></i>
+            <i style="color: white; font-size: 14px;" id="icons" class="fab fa-twitter"></i>
+            <i style="color: white; font-size: 14px;" id="icons" class="fab fa-instagram"></i>
+            <i style="color: white; font-size: 14px;" id="icons" class="fab fa-youtube"></i>
+        </div>
+        <div class="footer-ref">
+        <a href="#" style="margin: 0px 4px 0px 4px;"><h6>FAQ</h6></a>
+        <a href="blog.html" style="margin: 0px 4px 0px 4px;"><h6>News</h6></a>
+        <a href="contact_us.html" style="margin: 0px 4px 0px 4px;"><h6>Contact</h6></a>
+        </div>
+    </div>
+</footer>
+<!-- **************FOOTER END -->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
-  <script src="JS/Main.js"></script>
+  <script src="JS/jquery.js"></script>
+  <script src="JS/bootstrap.min.js"></script>
+<script src="JS/sample.js"></script>
 
 </body>
 
