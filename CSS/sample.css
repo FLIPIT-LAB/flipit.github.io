@@ -232,13 +232,12 @@ label{
    color: rgba(0,0,0,.5); 
    font-weight: 400;
     cursor: pointer; 
-    padding: 8px 16px 8px 0px;
+    padding: 8px 0px 8px 0px;
 }
 
 
 #signIn:hover{
   font-weight:bold;
-  padding: 8px 16px ;
   color: black;
   transition: .2s ease;
 }
