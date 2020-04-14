@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400,400i,500,700');
+body {
+    background: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+    -webkit-text-stroke: rgba(255, 255, 255, 0.01) 0.1px;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+.market-container{
+  border: 1px solid rgba(0, 0, 0, .3);
+  display: flex;
+  padding: 0px;
+  justify-content: space-around;
+}
+
+
+/* BACK TO TOP */
+#button {
+  display: inline-block;
+  background-color: dodgerblue;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+ opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\2191";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Styles for the content section */
+
+.content {
+  width: 77%;
+  margin: 50px auto;
+  font-family: 'Merriweather', serif;
+  font-size: 17px;
+  color: #6c767a;
+  line-height: 1.9;
+}
+@media (min-width: 1000px) {
+  .content {
+    width: 43%;
+  }
+  #button {
+    margin: 30px;
+  }
+}
+.content h1 {
+  margin-bottom: -10px;
+  color: #03a9f4;
+  line-height: 1.5;
+}
+.content h3 {
+  font-style: italic;
+  color: #96a2a7;
+}
+
+
+#slideshow {
+  margin: 20px auto;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  
+}
+
+#slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  text-align: center;
+}
+
+.view{
+  background-color: crimson;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.Ads{
+  background-color: whitesmoke;
+   padding: 50px;
+}
+
+.latest_ads{
+  display: flex; justify-content: center;
+}
+
+.sub_div1 {
+  background-color: #E5E7E9;
+  padding: 6px;
+  height: 200px;
+}
+
+.sub_div2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#list-p{
+  font-size: 14px; 
+  color: rgba(0, 0, 0,0.5);
+   font-weight: 500;
+}
+
+.nav-tabs .nav-item .nav-link {
+  background-color: #FFF;
+  color: black;
+}
+
+.nav-tabs .nav-item .nav-link:focus{
+  background-color: dodgerblue;
+  color: white;
+}
+
+.nav-item{
+  margin-right: 16px; 
+}
+
+
+
+/* Responsive columns */
+@media screen and (max-width: 920px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .nav-item{
+    margin:6px 2px;
+  }
+
+  .wowslider-container1{
+    display: none;
+  }
+
+  .Ads{
+    background-color: whitesmoke;
+     padding: 50px 10px;
+  }
+
+
+}
+
+@media screen and (max-width: 520px) {
+  .column {
+    width: 80%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
