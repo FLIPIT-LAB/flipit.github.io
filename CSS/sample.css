@@ -146,9 +146,8 @@ ul, a{
 }
 
  .navbar .nav-item .nav-link:hover {
-  background-color: rgba( 30,144,255);
-  transition: .3s ease-in-out;
-  color:white
+font-weight: bold;
+  transition: .2s ease-in-out;
 }
 
 .active{
